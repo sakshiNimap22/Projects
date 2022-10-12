@@ -9,8 +9,8 @@ function auth(req, res ,next ){
 
 // app.use(auth)
 function keyValuePair(req,res,next){
-    req.pair={
-        key:"value"
+    req.pair = {
+        key: "value"
     }
     next();
 }

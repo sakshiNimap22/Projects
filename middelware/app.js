@@ -7,12 +7,12 @@ const {keyValuePair,auth }=require('./middlerware')
 app.get("/", keyValuePair,(req,res)=>{
     console.log('home');
     console.log(req.pair);
-    let{pair}=req
+    let { pair }= req
      res.send(pair)
 })
 
 app.get("/user", auth,(req,res)=>{
-    let secret={
+    let secret = {
         username:"vik",
         secret:"qwertyui"
     }
